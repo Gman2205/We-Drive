@@ -1,0 +1,6 @@
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\DALProj\bin\Debug\DALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\DALProj\bin\Debug\DALProj.pdb
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\DALProj\obj\Debug\DALProj.csprojAssemblyReference.cache
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\DALProj\obj\Debug\DALProj.csproj.CoreCompileInputs.cache
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\DALProj\obj\Debug\DALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\DALProj\obj\Debug\DALProj.pdb

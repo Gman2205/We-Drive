@@ -1,0 +1,14 @@
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\wedrive.dll.config
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\wedrive.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\wedrive.pdb
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\BALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\BALProj.pdb
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\obj\Debug\wedrive.csprojAssemblyReference.cache
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\obj\Debug\wedrive.csproj.CoreCompileInputs.cache
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\obj\Debug\wedrive.csproj.CopyComplete
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\obj\Debug\wedrive.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\obj\Debug\wedrive.pdb
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\DALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\wedrive\bin\DALProj.pdb

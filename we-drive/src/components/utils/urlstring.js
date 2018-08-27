@@ -1,0 +1,1 @@
+export const URL_STRING = "http://ruppinmobile.tempdomain.co.il/site13/WebService.asmx";

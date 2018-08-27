@@ -1,0 +1,9 @@
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\bin\Debug\BALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\bin\Debug\BALProj.pdb
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\bin\Debug\DALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\bin\Debug\DALProj.pdb
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\obj\Debug\BALProj.csprojAssemblyReference.cache
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\obj\Debug\BALProj.csproj.CoreCompileInputs.cache
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\obj\Debug\BALProj.csproj.CopyComplete
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\obj\Debug\BALProj.dll
+C:\Users\gad\Desktop\Gad Projects\react-native\We-Drive-App\server\wedrive\BALProj\obj\Debug\BALProj.pdb
