@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, TextInput, Text, KeyboardAvoidingView, TouchableOpacity, Image } from 'react-native';
+import {
+	View,
+	StyleSheet,
+	TextInput,
+	Text,
+	KeyboardAvoidingView,
+	TouchableOpacity,
+	Image,
+	AsyncStorage
+} from 'react-native';
 import { Button } from 'react-native-elements';
 import axios from 'axios';
 
-import { URL_STRING } from '../utils/urlstring';
+import { URL_STRING } from '../../config/urlstring';
 
 export class Login extends Component {
 	static navigationOptions = {
@@ -22,15 +31,19 @@ export class Login extends Component {
 		this.setState({ password: text });
 	};
 	onSubmit = async () => {
-		const {email, password} = this.state;
-		axios.post(`${URL_STRING}/Login`,{
-			email,
-			password
-		}).then(res => {
-			console.log(res.data.d);
-			this.props.navigation.navigate('home');
-		}).catch(err => console.log(err.response.data))
-	}
+		const { email, password } = this.state;
+		axios
+			.post(`${URL_STRING}/Login`, {
+				email,
+				password
+			})
+			.then(async (res) => {
+				await AsyncStorage.setItem('user', JSON.stringify(res.data.d));
+				console.log(res.data.d);
+				this.props.navigation.navigate('home');
+			})
+			.catch((err) => console.log(err.response.data));
+	};
 
 	render() {
 		const { textInputWrapper, container, buttonStyle, buttonWrapperStyle, textInputStyle } = styles;

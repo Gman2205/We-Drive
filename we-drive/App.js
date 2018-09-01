@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { createBottomTabNavigator, createStackNavigator, createSwitchNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 // Import components
+import WelcomeScreen from './src/components/WelcomeScreen';
 import Login from './src/components/auth/Login';
 import Register from './src/components/auth/Register';
 import SearchDrive from './src/components/HomePages/SearchDrive';
@@ -56,6 +57,7 @@ const homeNavigation = createBottomTabNavigator(
 );
 
 const appNavigator = createSwitchNavigator({
+	intro: WelcomeScreen,
 	auth: authNavigation,
 	home: homeNavigation
 });

@@ -3,7 +3,7 @@ import { Text, View, KeyboardAvoidingView, StyleSheet, TextInput } from 'react-n
 import { Button } from 'react-native-elements';
 import axios from 'axios';
 
-import { URL_STRING } from '../utils/urlstring';
+import { URL_STRING } from '../../config/urlstring';
 
 class Register extends Component {
 	static navigationOptions = {
@@ -42,21 +42,22 @@ class Register extends Component {
 	};
 	onSubmit = () => {
 		const { name, email, password, phone } = this.state;
-		axios.post(`${URL_STRING}/Register`,{
-			name,
-			email,
-			password,
-			phone
-		})
-		.then(() => console.log('Successfuly'))
-		.catch(err => console.log(err));
-	}
+		axios
+			.post(`${URL_STRING}/Register`, {
+				name,
+				email,
+				password,
+				phone
+			})
+			.then(() => console.log('Successfuly'))
+			.catch((err) => console.log(err));
+	};
 
 	render() {
 		const { textInputStyle, textInputWrapper, container, buttonStyle, buttonWrapperStyle } = styles;
 		const { isKeyboardAvoidingEnabled } = this.state;
 		const { navigate } = this.props.navigation;
-		
+
 		return (
 			<KeyboardAvoidingView style={container} behavior="padding" enabled={isKeyboardAvoidingEnabled}>
 				<View style={textInputWrapper}>
@@ -107,10 +108,17 @@ class Register extends Component {
 					/>
 				</View>
 				<View style={buttonWrapperStyle}>
-					<Button buttonStyle={buttonStyle} title="Submit" backgroundColor="#fff" color="#000" rounded onPress={() => {
-						this.onSubmit();
-						navigate('home');
-					}} />
+					<Button
+						buttonStyle={buttonStyle}
+						title="Submit"
+						backgroundColor="#fff"
+						color="#000"
+						rounded
+						onPress={() => {
+							this.onSubmit();
+							navigate('home');
+						}}
+					/>
 				</View>
 			</KeyboardAvoidingView>
 		);

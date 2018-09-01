@@ -31,12 +31,25 @@ class PostDrive extends Component {
 
 	render() {
 		// Styles
-		const { container } = styles;
+		const {
+			container,
+			locationmHeaderTextStyle,
+			fromLocationButtonStyle,
+			toLocationButtonStyle,
+			dateButtonStyle,
+			timeButtonStyle,
+			submitButtonStyle,
+			availableSeatsTextStyle,
+			availableSeatsPickerStyle
+		} = styles;
+
 		// Buttons
 		const buttons = [ 'Single Ride', 'Multiple Rides' ];
+
 		return (
 			<View style={container}>
-				<View style={{ marginBottom: '10%' }}>
+				{/* Button Group For Navigate Between Ride Createtion Type (Single / Multiple) */}
+				<View style={{ marginBottom: '4%' }}>
 					<ButtonGroup
 						onPress={this.updateIndex}
 						selectedIndex={this.state.selectedIndex}
@@ -51,30 +64,14 @@ class PostDrive extends Component {
 
 				{/* From */}
 				<View style={{ width: '80%' }}>
-					<Text style={{ color: '#fff', alignSelf: 'flex-start', fontSize: 24, marginBottom: 8 }}>
-						Location
-					</Text>
-					<TouchableOpacity
-						style={{
-							backgroundColor: '#fff',
-							padding: 5,
-							flexDirection: 'row',
-							marginBottom: 15
-						}}
-					>
+					<Text style={locationmHeaderTextStyle}>Location</Text>
+					<TouchableOpacity style={fromLocationButtonStyle}>
 						<Icon name="map-marker" size={24} color="#000" />
 						<Text style={{ fontSize: 20, marginLeft: 10 }}>From</Text>
 					</TouchableOpacity>
 
 					{/* To */}
-					<TouchableOpacity
-						style={{
-							backgroundColor: '#fff',
-							padding: 5,
-							flexDirection: 'row',
-							marginBottom: 30
-						}}
-					>
+					<TouchableOpacity style={toLocationButtonStyle}>
 						<Icon name="map-marker" size={24} color="#000" />
 						<Text style={{ fontSize: 20, marginLeft: 10 }}>To</Text>
 					</TouchableOpacity>
@@ -83,15 +80,7 @@ class PostDrive extends Component {
 					<Text style={{ color: '#fff', alignSelf: 'flex-start', fontSize: 24, marginBottom: 8 }}>
 						Date & Time
 					</Text>
-					<TouchableOpacity
-						style={{
-							backgroundColor: '#fff',
-							padding: 5,
-							flexDirection: 'row',
-							marginBottom: 15
-						}}
-						onPress={this._handleDatePicker}
-					>
+					<TouchableOpacity style={dateButtonStyle} onPress={this._handleDatePicker}>
 						<Icon name="calendar" size={24} color="#000" />
 						<Text style={{ fontSize: 20, marginLeft: 10 }}>Date</Text>
 					</TouchableOpacity>
@@ -103,15 +92,7 @@ class PostDrive extends Component {
 					/>
 
 					{/* Time */}
-					<TouchableOpacity
-						style={{
-							backgroundColor: '#fff',
-							padding: 5,
-							flexDirection: 'row',
-							marginBottom: 30
-						}}
-						onPress={this._handleTimePicker}
-					>
+					<TouchableOpacity style={timeButtonStyle} onPress={this._handleTimePicker}>
 						<MaterialIcons name="schedule" size={24} color="#000" />
 						<Text style={{ fontSize: 20, marginLeft: 10 }}>Time</Text>
 					</TouchableOpacity>
@@ -126,11 +107,8 @@ class PostDrive extends Component {
 
 				{/* Available Seats */}
 				<View style={{ marginRight: '32%' }}>
-					<Text style={{ fontSize: 24, marginRight: '5%', color: '#fff' }}>Available Seats</Text>
-					<Picker
-						style={{ height: 40, width: 40, backgroundColor: '#fff', marginBottom: 50 }}
-						mode="dropdown"
-					>
+					<Text style={availableSeatsTextStyle}>Available Seats</Text>
+					<Picker style={availableSeatsPickerStyle} mode="dropdown">
 						<Picker.Item label="1" value="1" />
 						<Picker.Item label="2" value="2" />
 						<Picker.Item label="3" value="3" />
@@ -138,14 +116,7 @@ class PostDrive extends Component {
 					</Picker>
 				</View>
 
-				<TouchableOpacity
-					style={{
-						backgroundColor: '#fff',
-						width: '50%',
-						borderRadius: 20,
-						padding: 10
-					}}
-				>
+				<TouchableOpacity style={submitButtonStyle}>
 					<View style={{ flexDirection: 'row', marginLeft: '20%' }}>
 						<Icon name="plus" size={24} style={{ fontWeight: 300, marginRight: 5, color: '#3498db' }} />
 						<Text style={{ fontSize: 20, color: '#3498db' }}>SUBMIT</Text>
@@ -162,6 +133,53 @@ const styles = StyleSheet.create({
 		backgroundColor: '#3498db',
 		paddingTop: '5%',
 		alignItems: 'center'
+	},
+	locationmHeaderTextStyle: {
+		color: '#fff',
+		alignSelf: 'flex-start',
+		fontSize: 24,
+		marginBottom: 8
+	},
+	fromLocationButtonStyle: {
+		backgroundColor: '#fff',
+		padding: 5,
+		flexDirection: 'row',
+		marginBottom: 15
+	},
+	toLocationButtonStyle: {
+		backgroundColor: '#fff',
+		padding: 5,
+		flexDirection: 'row',
+		marginBottom: 30
+	},
+	dateButtonStyle: {
+		backgroundColor: '#fff',
+		padding: 5,
+		flexDirection: 'row',
+		marginBottom: 15
+	},
+	timeButtonStyle: {
+		backgroundColor: '#fff',
+		padding: 5,
+		flexDirection: 'row',
+		marginBottom: 30
+	},
+	submitButtonStyle: {
+		backgroundColor: '#fff',
+		width: '50%',
+		borderRadius: 20,
+		padding: 10
+	},
+	availableSeatsTextStyle: {
+		fontSize: 24,
+		marginRight: '5%',
+		color: '#fff'
+	},
+	availableSeatsPickerStyle: {
+		height: 40,
+		width: 40,
+		backgroundColor: '#fff',
+		marginBottom: 40
 	}
 });
 
